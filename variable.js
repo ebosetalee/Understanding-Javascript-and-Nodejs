@@ -45,8 +45,21 @@ var number_list = [3, 7, 9, 10, 23, 8, 4]
 console.log(number_list[4])
 console.log(number_list.indexOf(10))
 
+// there is also lastIndexOf: returns the position of the last occurrence of a specified text
+var string_list = "Please locate where 'locate' occurs!";
+console.log(string_list.lastIndexOf("locate"))
+// It returns 21, i.e the start of where "locate" is
+
+// also, where the item to be searched dosen't exist in the text, it returns -1
+let n2 = 'bit'.indexOf('js');
+console.log(n2)
+// It also returns -1 if the case isn't the same i.e IndexOf is case sensitive
+let n3 = 'bit'.indexOf('IT');
+console.log(n3)
+
+
 // note the = is for assignment, == is to check if a == b;
-// strict equal === or !==
+// strict equal === or !== which expects equality in both type and value.
 var beta = 16
 console.log(beta === 23)
 
@@ -75,6 +88,7 @@ if (2 > 11) {
 } else {
 	var element = 3
 }
+// note the brackets for the if statements
 console.log(element + 1)
 
 
