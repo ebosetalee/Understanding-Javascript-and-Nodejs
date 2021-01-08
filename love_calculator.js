@@ -1,5 +1,5 @@
-const male = "bola"
-const female = "bisi"
+const males = ["timi", "funmi", "jasmine", "praise", "anna", "lisa", "bola"]
+const females = ["bisi", "seun", "joseph", "frank", "daniel", "bayo", "david"]
 
 
 function calculator(male, female){
@@ -8,16 +8,14 @@ function calculator(male, female){
 
     let love_algorithm = ""
 
-    let index = 0
-    for (index in calculator_name){
+    for (let index = 0; index < calculator_name.length; index++){
         let count = 0
-        let letter = calculator_name[index];
+        const letter = calculator_name[index]
         for (x of calculator_name){
             if (x == letter){
                 count+= 1
             }
         }
-        index++
         love_algorithm += count
     }
     console.log(love_algorithm)
@@ -26,10 +24,10 @@ function calculator(male, female){
         let new_love_algorithm = ""
         index = 0;
         let index2 = love_algorithm.length - 1 
-        let fixed_length = love_algorithm.length / 2;
+        const fixed_length = love_algorithm.length / 2;
         while (index < fixed_length){
             if (index != index2){
-                let result = parseInt(love_algorithm[index]) + parseInt(love_algorithm[index2]);
+                const result = parseInt(love_algorithm[index]) + parseInt(love_algorithm[index2]);
                 new_love_algorithm += result;
             }else {
                 new_love_algorithm += love_algorithm[index];
@@ -44,4 +42,7 @@ function calculator(male, female){
         }
     }
 }
-calculator(male, female)
+const male_random = Math.floor(Math.random() * males.length);
+const female_random = Math.floor(Math.random() * females.length);
+
+calculator(males[male_random], females[female_random])
