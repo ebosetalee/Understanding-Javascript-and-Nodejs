@@ -40,3 +40,48 @@ function hypotenuse(l, b){
     return Math.sqrt(area)
 }
 console.log(hypotenuse(3,4))
+
+
+// Write a function midrange, that calculates the midrange of 3 numbers. 
+// The midrange is the mean of the smallest and largest number.
+// Example: midrange(3, 9, 1) should return (9+1)/2 = 5.
+function midrange(a, b, c){
+    function mean(num1, num2){
+        return (num1 + num2) / 2;
+    }
+    let mini = Math.min(a, b, c), maxi = Math.max(a, b, c);
+    return mean(mini, maxi)
+}
+console.log(midrange(3, 9, 1))
+
+
+// Write a function area that calculates the area of a circle. 
+// The function is given the radius of the circle.
+// Example: area(1) should return π and area(2) should return 4 * π.
+// area of a circle is pi r square i.e 3.14 * (r**2)
+function area(r){
+    return Math.PI * (r **2);
+}
+console.log(area(2))
+
+
+// Write a function round100 that rounds a number to the nearest hundred.
+// Example: round100(1749) should return 1700 and round100(856.12) should return 900.
+function round100(numb){
+    let ans = numb / 100;
+    return Math.round(ans)* 100
+}
+console.log(round100(1749));
+console.log(round100(856.12))
+
+// Write a function dice that returns like a dice a random number between 1 and 6.
+function dice(){
+    return Math.floor(Math.random() * 6) + 1
+}
+
+// Write a function add that takes a string with a summation task and returns its result as a number. 
+// Two natural numbers should be added. The summation task is a string of the form '102+17'.
+// Example: add('102+17') should return 119.
+// - Hint
+// Determine the first summand with parseInt. Use indexOf to determine the position of the plus sign. 
+// Determine with substr the substring after the plus sign. Use parseInt to determine the second summand from this substring.

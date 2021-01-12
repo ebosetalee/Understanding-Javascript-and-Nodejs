@@ -97,3 +97,37 @@ let y1 = Math.sqrt(9); // 3
 let y2 = Math.pow(10, 3);  // 1000 i.e 10 * 10 * 10 = 1000.
 console.log(y1, y2)
 
+// Min and Max is used to find min and maximum in a list
+let min = Math.min(5, 7);
+let max = Math.max(3, 9, 2);
+console.log(min, max)
+
+
+// Besides functions Math offers some mathematical constants.
+// Math.PI gives π (roughly 3.14) and Math.E gives Euler's number e (roughly 2.71).
+
+// Rounding 
+// If you want to round a number, you can use the Math.round(), Math.floor() 
+// and Math.ceil() functions.
+let a = Math.round(5.49);
+let b = Math.round(4.5);
+let c = Math.floor(5.99);
+let d = Math.ceil(4.01);
+// Math.round() rounds a number to the nearest integer, Math.floor() rounds a number 
+// downwards to the nearest integer and Math.ceil() rounds a number upwards to the 
+// nearest integer. Therefore, the variables a to d all get the value 5.
+console.log(a, b, c, d)
+
+
+// Write a function dice that returns like a dice a random number between 1 and 6.
+console.log(Math.floor(Math.random()* 7))
+console.log(Math.floor(Math.random() * 6) + 1 )
+// They both work
+
+let style = parseInt("127+19", 10)
+console.log(style)
+
+// parseInt function
+// This is used to read a number from a string: 
+console.log(parseInt('19 Grad', 10));
+// 
