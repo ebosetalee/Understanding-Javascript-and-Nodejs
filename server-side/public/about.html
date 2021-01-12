@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <title>My Webpage!</title>
+        <style> 
+            html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }
+            html {
+            height: 100vh;
+            font-size: 10px;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(to right, #2224bf, #ac7);
+                color: #fff;
+                font-family: "Lato", sans-serif;
+                font-size: 4rem;
+                font-weight: 300;
+            }
+
+            @keyframes typing {
+            0% { font-size: 0; }
+            100% { font-size: 4rem;}
+            }
+
+            @keyframes before-setup {
+            0% { 
+                font-size: 0;
+                border: 2px solid darkred;
+                padding: 2px 12px 2px 12px;
+                border-radius: 28px;
+            }
+            100% { 
+                font-size: 4rem;
+                border: 2px solid darkred;
+                padding: 2px 12px 2px 12px;
+                border-radius: 28px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Write a test <ins tabindex="0">text</ins> <del>document</del>  that can be used for <ins tabindex="0">fun</ins> <del>practice</del> and games.
+          </p>
+    </body>
+</html>
