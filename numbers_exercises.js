@@ -1,9 +1,9 @@
 // Write a function add that takes two numbers and returns their sum.
 // Example: add(1, 2) should return 3.
-function add(a, b){
+function addition(a, b){
     return a + b
 }
-console.log(add(1, 2))
+console.log(addition(1, 2))
 
 
 // Write a function onesDigit that takes a natural number and returns the ones digit of that number.
@@ -72,11 +72,11 @@ function round100(numb){
     return Math.round(ans)* 100
 }
 console.log(round100(1749));
-console.log(round100(856.12))
+console.log(round100(856.12));
 
 // Write a function dice that returns like a dice a random number between 1 and 6.
 function dice(){
-    return Math.floor(Math.random() * 6) + 1
+    return Math.floor(Math.random() * 6) + 1;
 }
 
 // Write a function add that takes a string with a summation task and returns its result as a number. 
@@ -85,3 +85,10 @@ function dice(){
 // - Hint
 // Determine the first summand with parseInt. Use indexOf to determine the position of the plus sign. 
 // Determine with substr the substring after the plus sign. Use parseInt to determine the second summand from this substring.
+function add_string(words){
+    let first_num = parseInt(words);
+    let indexs = words.indexOf("+");
+    let second_num = parseInt(words.substr(indexs));
+    return first_num + second_num
+}
+console.log(add_string("102+17"))
