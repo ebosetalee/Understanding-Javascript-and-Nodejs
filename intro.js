@@ -10,6 +10,7 @@ z = x + y;
 console.log(z);
 
 var find_date = new Date();
+console.log("The year", find_date.getFullYear())
 var daylist;
 daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 console.log("Today is " + daylist[find_date.getDay()] + ".") // this prints according to the days 

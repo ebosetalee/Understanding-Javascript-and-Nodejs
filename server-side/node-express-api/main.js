@@ -26,3 +26,19 @@ app.post("/name", middle, function(req, res) {
 app.listen(port, () => {
     console.log(`server is runnng on port: ${port}`);
 });
+
+//const baseurl = "http://localhost:4041/imgs/"
+/*
+fs.readdir(__dirname + "/imgs/", (err, files) => {
+    if (err){
+        res.status(400).json({message: err});
+    }
+    let filenames = [];
+    files.forEach(file => {
+        filenames.push({
+            name : file,
+            location : baseurl + file,
+        });
+    });
+    return res.status(200).json(filenames)
+})*/

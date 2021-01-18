@@ -113,3 +113,14 @@ console.log(see, and, stopp)
 var text1 = "Hello";
 var text2 = "World";
 console.log(text1.concat(" ", text2));
+
+// random
+const randomWords = ["Shine", "bright", "like", "a", "diamond", "in", "the", "sky", 
+                    "fill", "the", "earth", "with", "your", "beautiful", "heart", 
+                    "make", "your", "happiness", "glow", "always"];
+
+let randomSentence = "";
+for (let i = 0; i < 10; i++){
+    const random = Math.floor(Math.random() * randomWords.length)+ 1;
+    randomSentence += randomWords[random]+" "
+};
