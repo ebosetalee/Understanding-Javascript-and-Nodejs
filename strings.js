@@ -124,3 +124,8 @@ for (let i = 0; i < 10; i++){
     const random = Math.floor(Math.random() * randomWords.length)+ 1;
     randomSentence += randomWords[random]+" "
 };
+
+// regex 
+let sentence = "abd fhe kdj"
+let words = [];
+    words = sentence.match(/\S+/g); //find words before space.
