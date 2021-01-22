@@ -41,13 +41,13 @@ function greet_b(){
 console.log(b.length)
 
 // to get index location
-var number_list = [3, 7, 9, 10, 23, 8, 4]
-console.log(number_list[4])
-console.log(number_list.indexOf(10))
+var numberList = [3, 7, 9, 10, 23, 8, 4]
+console.log(numberList[4])
+console.log(numberList.indexOf(10))
 
 // there is also lastIndexOf: returns the position of the last occurrence of a specified text
-var string_list = "Please locate where 'locate' occurs!";
-console.log(string_list.lastIndexOf("locate"))
+var stringList = "Please locate where 'locate' occurs!";
+console.log(stringList.lastIndexOf("locate"))
 // It returns 21, i.e the start of where "locate" is
 
 // also, where the item to be searched dosen't exist in the text, it returns -1

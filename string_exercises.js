@@ -27,8 +27,8 @@ function secondIndexOf(string1, string2){
     if (answer == -1){
         return answer
     } else if (answer != -1)
-        new_string = string1.slice(answer+1);
-        answer2 = new_string.indexOf(string2);
+        newString = string1.slice(answer+1);
+        answer2 = newString.indexOf(string2);
         if (answer2 == -1){
             return(answer2)
         } else{
@@ -42,16 +42,16 @@ console.log(secondIndexOf("White Rabbit", "it"))
 // The first word are all characters up to the first space.
 function firstWord(text){
     var i = 0;
-    var first_word = "";
+    var firstWord = "";
     while (text[i]){
         if (text[i]== " "){
             break;
         } else {
-            first_word += text[i];
+            firstWord += text[i];
         }
         i++
     }
-    return first_word
+    return firstWord
 }
 
 console.log(firstWord("see and stop"))

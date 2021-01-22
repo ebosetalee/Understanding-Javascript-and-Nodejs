@@ -85,10 +85,10 @@ function dice(){
 // - Hint
 // Determine the first summand with parseInt. Use indexOf to determine the position of the plus sign. 
 // Determine with substr the substring after the plus sign. Use parseInt to determine the second summand from this substring.
-function add_string(words){
-    let first_num = parseInt(words);
+function addString(words){
+    let firstNum = parseInt(words);
     let indexs = words.indexOf("+");
-    let second_num = parseInt(words.substr(indexs));
-    return first_num + second_num
+    let secondNum = parseInt(words.substr(indexs));
+    return firstNum + secondNum
 }
-console.log(add_string("102+17"))
+console.log(addString("102+17"))

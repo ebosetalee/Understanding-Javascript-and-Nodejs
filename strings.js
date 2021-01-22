@@ -72,8 +72,8 @@ console.log(n1)
 
 
 // The search() method searches a string for a specified value and returns the position of the match.
-var string_list = "Please locate where 'locate' occurs!";
-console.log(string_list.search("locate"));
+var stringList = "Please locate where 'locate' occurs!";
+console.log(stringList.search("locate"));
 // it returns 7, because its the 7th word using space as a word
 
 // Note that the search() and indexOf() methods aren't equal:
@@ -89,14 +89,14 @@ console.log(string_list.search("locate"));
 // substr(start, length)
 // The slice() extracts a part of a string and returns the extracted part in a new string.
 // The method takes 2 parameters: the start position, and the end position (end not included),
-console.log(string_list.slice(10));
+console.log(stringList.slice(10));
 
-var res = string_list.slice(-12);
+var res = stringList.slice(-12);
 console.log(res)
 
 // The substring() is similar to slice().
 // The difference is that substring() cannot accept negative indexes
-res = string_list.substring(7, 13);
+res = stringList.substring(7, 13);
 console.log(res)
 
 // substr() is similar to slice().

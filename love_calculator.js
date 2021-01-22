@@ -3,46 +3,46 @@ const females = ["bisi", "seun", "joseph", "frank", "daniel", "bayo", "david"];
 
 
 function calculator(male, female){
-    const calculator_name = male + "loves" + female;
-    console.log(calculator_name);
+    const calculatorName = male + "loves" + female;
+    console.log(calculatorName);
 
-    let love_algorithm = "";
+    let loveAlgorithm = "";
 
-    for (let index = 0; index < calculator_name.length; index++){
+    for (let index = 0; index < calculatorName.length; index++){
         let count = 0;
-        const letter = calculator_name[index];
-        for (x of calculator_name){
+        const letter = calculatorName[index];
+        for (x of calculatorName){
             if (x == letter){
                 count+= 1;
             }
         }
-        love_algorithm += count;
+        loveAlgorithm += count;
     }
-    console.log(love_algorithm);
+    console.log(loveAlgorithm);
 
-    while (love_algorithm.length > 2){
-        let new_love_algorithm = "";
-        count_from_front = 0;
-        let count_from_back = love_algorithm.length - 1 ;
-        const fixed_length = love_algorithm.length / 2;
-        while (count_from_front < fixed_length){
-            if (count_from_front != count_from_back){
-                const result = parseInt(love_algorithm[count_from_front]) + parseInt(love_algorithm[count_from_back]);
-                new_love_algorithm += result;
+    while (loveAlgorithm.length > 2){
+        let newLoveAlgorithm = "";
+        countFromFront = 0;
+        let countFromBack = loveAlgorithm.length - 1 ;
+        const fixedLength = loveAlgorithm.length / 2;
+        while (countFromFront < fixedLength){
+            if (countFromFront != countFromBack){
+                const result = parseInt(loveAlgorithm[countFromFront]) + parseInt(loveAlgorithm[countFromBack]);
+                newLoveAlgorithm += result;
             }else {
-                new_love_algorithm += love_algorithm[count_from_front];
+                newLoveAlgorithm += loveAlgorithm[countFromFront];
             }
-            count_from_front++
-            count_from_back--
+            countFromFront++
+            countFromBack--
         }
-        love_algorithm = new_love_algorithm
-        console.log(love_algorithm)
-        if (love_algorithm.length == 2){
-            console.log(`The love percentage is ${love_algorithm}%`)
+        loveAlgorithm = newLoveAlgorithm
+        console.log(loveAlgorithm)
+        if (loveAlgorithm.length == 2){
+            console.log(`The love percentage is ${loveAlgorithm}%`)
         }
     }
 }
-const male_random = Math.floor(Math.random() * males.length);
-const female_random = Math.floor(Math.random() * females.length);
+const maleRandom = Math.floor(Math.random() * males.length);
+const femaleRandom = Math.floor(Math.random() * females.length);
 
-calculator(males[male_random], females[female_random])
+calculator(males[maleRandom], females[femaleRandom])
