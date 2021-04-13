@@ -7,7 +7,9 @@
 // one of the two input values is true. If both input values are false, the
 // result is false. ! is applied to a single Boolean value and inverts this value:
 // !true is false and !false is true.
-//
+// 
+
+// NOTE /= means divide 
 console.log([3] == [3]);
 
 let x1 = true && false;
