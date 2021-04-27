@@ -1,5 +1,5 @@
 # My Journey Learning Javascript and Nodejs
-## INTRODUCTION 
+## BASIC
 `intro.js`
 - variable
 - get date or time
@@ -7,14 +7,14 @@
 - formatting strings
 - console.log
 
-## VARIABLE 
+### VARIABLE 
 `variable.js`
 - Difference between _var_, _let_, _const_
 - assignment
 - indexing
 - conditionals 
 
-## STRINGS
+### STRINGS
 `strings.js`; 
 `string_exercises.js`
 - All about strings
@@ -25,7 +25,7 @@
 - indexing,
 - substring and slicing etc
 
-## NUMBERS
+### NUMBERS
 `numbers.js`; 
 `numbers_exercises.js`
 - Everything about numbers:
@@ -36,12 +36,20 @@
 - Arithmetic (area, hyp0thenuse, mean, midrange etc)
 - random (dice)
 
-## LOOP
+### LOOP
 `loops.js`
 - for loop
 - while loop
 - switch
 - break
+
+## FUNCTIONS
+`functions`
+- map
+- callback
+- forEach
+- hoisting
+- arrow function
 
 ## SERVER-SIDE
 _This involves creating a server using nodejs or express js._

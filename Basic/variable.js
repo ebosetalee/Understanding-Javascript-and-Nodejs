@@ -103,9 +103,36 @@ console.log(hello(hi(2, 2), 4));
 function rate(a, b) {
     return a * b;
 }
+// Note a return statement can two seperate values
 
 function bate(a, b) {
     return rate(a, b + 1);
 }
 
 console.log(bate(2, 3));
+
+// Use this
+function isPurple(color) {
+    return color.toLowerCase() === "purple";
+}
+// Instead of this
+/*function isPurple(color){
+    if (color.toLowerCase() === "purple"){
+        return true
+    }
+    return false
+}*/
+
+// Takes an array checking if it contains purple like colors
+function containsPurple(arr) {
+    for (color in arr) {
+        if (
+            color.toLowerCase() === "purple" ||
+            color.toLowerCase() === "magneta"
+        ) {
+            return true;
+        }
+    }
+    return false;
+}
+// Note || means or

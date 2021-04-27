@@ -44,7 +44,7 @@ for (x in person) {
     console.log(text);
 }
 
-// For of: 
+// For of:
 // This statement loops through the values of an iterable objects. It lets you loop
 // over data structures that are iterable such as Arrays, Strings, Maps, NodeLists, and more.
 // The for/of loop has the following syntax:
@@ -68,13 +68,13 @@ const moviesReview = {
     "Kill Bill": 8
 };
 
-for (movie of Object.keys(moviesReview)){
+for (movie of Object.keys(moviesReview)) {
     console.log(movie, moviesReview[movie]);
 }
 // however, it is better to use for in for this
 
-for (m in moviesReview){
-    console.log(m)
+for (m in moviesReview) {
+    console.log(m);
 }
 
 // While loop
@@ -109,7 +109,6 @@ do {
 
 // remember this sign ! means not
 
-
 // break
 // To end a loop
 // Continue
@@ -117,13 +116,13 @@ do {
 const target = Math.floor(Math.random() * 10);
 let guess = Math.floor(Math.random() * 10);
 
-while(true){
-    if (target === guess) break; // 
-    console.log(`Target: ${target}, Guess: ${guess}`)
+while (true) {
+    if (target === guess) break; //
+    console.log(`Target: ${target}, Guess: ${guess}`);
     guess = Math.floor(Math.random() * 10);
 }
-console.log(`Target: ${target}, Guess: ${guess}`)
-console.log("CONGRATS YOU WIN")
+console.log(`Target: ${target}, Guess: ${guess}`);
+console.log("CONGRATS YOU WIN");
 
 /* Switch
 This is used to perform different actions based on different conditions.
