@@ -6,7 +6,9 @@ const app = express();
 const port = process.env.PORT || 4041;
 
 app.use(bodyParser.urlencoded({extended: false }))
+// use app.use(express.urlencoded()); //Parse URL-encoded bodies
 app.use(bodyParser.json())
+// use app.use(express.json()); 
 
 
 app.get("/", (_, res) => {
